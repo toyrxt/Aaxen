@@ -58,6 +58,7 @@ jobs:
           AXEN_ACCOUNT: ${{ secrets.DE_ACCOUNT }}
           GOST_PROXY: ${{ secrets.DE_PROXY }}
           TG_BOT: ${{ secrets.TG_BOT }}
+          CRON_JOB: ${{ secrets.DE_CRON }}
         run: |
           xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" python axen_coins.py
 
